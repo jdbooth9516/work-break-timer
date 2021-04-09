@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Countdown</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1 id="program">Work-Break Timer </h1>
+   <container  id="input"class="input">
+    <div id="input-text">
+      <p id="instructions"> Enter time Here</p>
+    </div>
+    <div id="input-box"> 
+    <input id="time-hour" type="text">
+    <label for="time-hour">Hours</label>
+    <input type="text" name="min" id="time-min">
+    <label for="time-min">Minutes</label>
+    </div>
+    <div id="input-button">
+      <input id="submit" type="submit" class="btn" value="Start Timer">
+      <input id ="break" type="submit" class='btn' value="Start Break">
+    </div>
+   </container>
+
+   <container id="timer" class="timer-area">
+     <div class="time-box" id="hours">
+        <p class="large" id="hour"> 0</p>
+        <span>hours</span>
+     </div>
+     <div class="time-box" id="minutes">
+      <p class="large" id="min">0</p>
+      <span>min</span>
+     </div>
+     <div class="time-box" id="seconds">
+      <p class="large" id='sec'>0</p>
+      <span>sec</span>
+     </div>
+   </container>
+   <script src="script.js"></script>
+   <audio id="beep" src="mixkit-classic-alarm-995.wav"></audio>
+</body>
+</html>
